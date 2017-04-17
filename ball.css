@@ -1,0 +1,89 @@
+body {
+	background-color: #f4f9de;
+}
+
+.ball {
+	height: 5em;
+	width: 5em;
+	border-radius: 100px;
+	background-color: #990f4a;
+	position: relative;
+	margin:auto;
+  	-webkit-animation: ball-bounce-y 7s infinite ease; /* Safari 4+ */
+  -moz-animation:    ball-bounce-y 7s infinite ease; /* Fx 5+ */
+  -o-animation:      ball-bounce-y 7s infinite ease; /* Opera 12+ */
+  animation:         ball-bounce-y 7s infinite ease; /* IE 10+, Fx 29+ */
+}
+
+#fastball {
+  	-webkit-animation: ball-bounce-y 2s infinite ease; /* Safari 4+ */
+  -moz-animation:    ball-bounce-y 2s infinite ease; /* Fx 5+ */
+  -o-animation:      ball-bounce-y 2s infinite ease; /* Opera 12+ */
+  animation:         ball-bounce-y 2s infinite ease; /* IE 10+, Fx 29+ */
+}
+
+#ultrafastball {
+	background-color: red;
+  	-webkit-animation: ball-bounce-y 0.2s infinite ease; /* Safari 4+ */
+  -moz-animation:    ball-bounce-y 0.2s infinite ease; /* Fx 5+ */
+  -o-animation:      ball-bounce-y 0.2s infinite ease; /* Opera 12+ */
+  animation:         ball-bounce-y 0.2s infinite ease; /* IE 10+, Fx 29+ */
+}
+
+
+@keyframes ball-bounce-y {
+	0% { top: 0%; }
+	50% { top: 60%; }
+	100% { top: 0%; }
+}
+
+.headerbox {
+	text-align: center; 
+	position: relative;
+	top:20;
+	width: 200px;
+	margin: auto;
+}
+
+
+#scorecontainer {
+	position: fixed;
+	width: 100%;
+	height:100%;
+	text-align: center;
+	z-index: -1;
+}
+
+.clicks {
+	font-family: 'Noto Serif', serif;
+	font-size: 300px;
+	position: relative;
+	top: -17px;
+	opacity: 0.2;
+}
+
+.ball-chat {
+	position: relative;
+    right: 150px;
+    font-family: 'Noto Serif', serif;
+	font-size: 16px;
+}
+
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+
+p {
+	font-family: 'Noto Serif', serif;
+	font-size: 16px;
+}
+
+h1, h2, h3 {
+
+font-family: 'Josefin Sans', sans-serif;
+}
